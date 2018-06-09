@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let item of messages; trackBy:trackByFn">
+    [Message added: {{item.timestamp.toDate() |  date:'medium'}}] {{ item.text }}
+  </li>
+</ul>
